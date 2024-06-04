@@ -1,0 +1,42 @@
+{
+  "format_version": "1.14.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+          "scene_tag": "q0018_NPC Aliado",
+          "npc_name": "NPC Aliado",
+          "text": "Quem é você ? ",
+          "buttons": [
+            {
+              "name": "Sou da resitência.",
+              "commands": ["/dialogue open @s @initiator q0018_NPC Aliado_1"]
+            }
+          ]
+        },
+        {
+          "scene_tag": "q0018_NPC Aliado_1",
+          "npc_name": "NPC Aliado",
+          "text": "Graças a Deus! Não sei se iria continuar vivo, estou muito fraco. Alguns lugabots apareceram do nada e me atacaram, consegui escapar mas fui machucado. Precisamos sair daqui e levar o item que resgatei. \n",
+          "buttons": 
+            {
+              "name": "Vamos voltar!",
+              "commands": ["/dialogue open @s @initiator q0018_NPC do campo de futebol e atletismo",
+              "/tag @initiator remove Q0018_1",
+              "/tag @initiator add Q0018_2",
+              "/tp @initiator -274 -17 -221"]
+            }
+          },
+          {
+          "scene_tag": "q0018_NPC Aliado_2",
+          "npc_name": "NPC Aliado",
+          "text": "Tudo graças a ele! Também consegui pegar o item, com ele conseguiremos criar uma arma que ajudará a derrotar os lugabots mais facilmente. Muito obrigado! Assim que tiver pronta, te avisarei JOGADOR e te entregarei a arma para te ajudar.",
+          "buttons": 
+            {
+              "name": "Ok!"
+              "commands": ["/tag @initiator remove Q0018_3",
+              "/tag @initiator remove Q0018"]
+            }
+            }
+          ]
+        }
+      }
